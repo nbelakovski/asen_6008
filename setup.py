@@ -5,13 +5,13 @@ with open("README.md") as f:
 
 setuptools.setup(
         name="asen_6008",
-        version="1.0.0",
+        version="1.0.2",
         author="Nickolai Belakovski",
         description="Constants for CU Boulder's ASEN 6008",
         long_description=long_desc,
         long_description_content_type="text/markdown",
         url="https://github.com/nbelakovski/asen_6008",
-        packages=setuptools.find_packages(),
+        packages=['asen_6008'],
         classifiers=[
         "Programming Language :: Python :: 3",
         "License :: Free For Educational Use",
