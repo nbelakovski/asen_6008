@@ -1,11 +1,12 @@
 import setuptools
+from asen_6008 import __version__
 
 with open("README.md") as f:
     long_desc = f.read()
 
 setuptools.setup(
         name="asen_6008",
-        version="1.0.2",
+        version=__version__,
         author="Nickolai Belakovski",
         description="Constants for CU Boulder's ASEN 6008",
         long_description=long_desc,
