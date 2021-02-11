@@ -16,7 +16,7 @@ The classes are all instances of the class Planet which has the following layout
 
 ```
 class Planet:
-	L # deg
+    L # deg
     a # AU
     e
     i #deg
@@ -29,10 +29,10 @@ class Planet:
 Elements L, a, e, i, Omega, and Pi are of type OrbitalElement which has the following layout
 ```
 class OrbitalElement:
-	a0
-	a1
-	a2
-	a3
+    a0
+    a1
+    a2
+    a3
 ```
 
 Elements mu and r are simply floating point values.
@@ -88,11 +88,11 @@ Because the professor requested that no equations be placed in the library, only
 import asen_6008
 
 class MyPlanet():
-	def __init__(self, planet):
-		self.planet = planet
+    def __init__(self, planet):
+        self.planet = planet
 
-	def e(self, t):
-		return self.planet.e.a0 + self.planet.e.a1 * t + self.planet.e.a2 * t**2 + self.planet.e.a3 * t**3
+    def e(self, t):
+        return self.planet.e.a0 + self.planet.e.a1 * t + self.planet.e.a2 * t**2 + self.planet.e.a3 * t**3
 
 Earth = MyPlanet(asen_6008.Earth)
 Mars = MyPlanet(asen_6008.Mars)
