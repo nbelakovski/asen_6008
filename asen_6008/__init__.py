@@ -6,7 +6,7 @@ Created on Wed Jan 27 12:40:48 2021
 @author: nbelakovski
 """
 
-__version__ = "2.0.0-rc.3"
+__version__ = "2.0.0"
 
 AU = 1.49597870700e8 # km
 Days_per_year =  365.242189
@@ -18,22 +18,22 @@ class OrbitalElement(object):
         self.a1 = a1
         self.a2 = a2
         self.a3 = a3
-        
+
     def __repr__(self):
         return "{}, {}, {}, {}".format(self.a0, self.a1, self.a2, self.a3)
-        
-        
+
+
 class Planet(object):
     def __init__(self, L, a, e, i, Omega, Pi, mu, r):
         self.L = L # deg
         self.a = a # AU
-        self.e = e 
+        self.e = e
         self.i = i #deg
         self.Omega = Omega # deg
         self.Pi = Pi # deg
         self.mu = mu # km3/s2
         self.r = r # km
-        
+
     def __repr__(self):
         return '''L (deg): {}
 a (AU): {}
@@ -54,8 +54,8 @@ Sun = Planet(L=None,
                  mu=1.32712440018e11,
                  r=None
                  )
-        
-        
+
+
 Mercury = Planet(L=OrbitalElement(252.250906, 149472.6746358, -0.00000535, 0.000000002),
                  a=OrbitalElement(0.387098310, 0, 0, 0),
                  e=OrbitalElement(0.20563175, 0.000020406, -0.0000000284, -0.00000000017),
@@ -64,7 +64,7 @@ Mercury = Planet(L=OrbitalElement(252.250906, 149472.6746358, -0.00000535, 0.000
                  Pi=OrbitalElement(77.456119, 0.1588643, -0.00001343, 0.000000039),
                  # Values for mu and r for Mercury were not specified in the handout.
                  # Override them in your own code if you like
-                 
+
                  mu=None,
                  r=None
                  )
@@ -125,7 +125,6 @@ Saturn = Planet(L=OrbitalElement(50.077471, 1222.1137943, 0.00021004, -0.0000000
 
 
 
-
 Uranus = Planet(L=OrbitalElement(314.055005, 429.8640561, 0.00030434, 0.000000026),
                  a=OrbitalElement(19.218446062, -0.0000000372, 0.00000000098, 0.0),
                  e=OrbitalElement(0.04629590, -0.000027337, 0.0000000790, 0.00000000025),
@@ -135,7 +134,6 @@ Uranus = Planet(L=OrbitalElement(314.055005, 429.8640561, 0.00030434, 0.00000002
                  mu=5.7939513e6,
                  r=25559
                  )
-
 
 
 
@@ -160,5 +158,3 @@ Pluto = Planet(L=OrbitalElement(238.92903833, 145.20780515, 0.0, 0.0),
                  mu=8.71e2,
                  r=1188.3
                  )
-
-
