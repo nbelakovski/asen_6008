@@ -1,6 +1,6 @@
 ## About
 
-This library encodes all of the information provided in the handouts Coefficient Data and Ephemeris_Meeus from ASEN 6008 (CU Boudler). This library was created in Spring 2021 when the course was taught by Professor Kate Davis.
+This library encodes all of the information provided in the handouts Coefficient Data and Ephemeris_Meeus from ASEN 6008 (CU Boudler). This library was created in Spring 2021 when the course was taught by Professor Kate Davis. The relevant files have been uploaded to the repo.
 
 ## Installation
 
